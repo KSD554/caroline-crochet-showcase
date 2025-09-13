@@ -50,11 +50,27 @@ const Index = () => {
                 sacs colorés, bonnets raffinés et vêtements sur mesure pour sublimer votre style.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="hero" size="xl">
+                <Button 
+                  variant="hero" 
+                  size="xl"
+                  onClick={() => {
+                    const message = "Bonjour Caroline, je viens de votre site web et je souhaite découvrir vos créations artisanales au crochet. Pouvez-vous me présenter votre collection ?";
+                    const whatsappUrl = `https://wa.me/22586322800?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
+                >
                   Découvrir nos Créations
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" size="xl">
+                <Button 
+                  variant="outline" 
+                  size="xl"
+                  onClick={() => {
+                    const message = "Bonjour Caroline, je souhaite faire une commande personnalisée. Pouvez-vous me dire comment procéder et quels sont les délais ?";
+                    const whatsappUrl = `https://wa.me/22586322800?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                  }}
+                >
                   Commande Personnalisée
                 </Button>
               </div>
@@ -153,7 +169,15 @@ const Index = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
                   <p className="text-muted-foreground mb-4">{product.description}</p>
-                  <Button variant="outline" className="w-full">
+                  <Button 
+                    variant="outline" 
+                    className="w-full"
+                    onClick={() => {
+                      const message = `Bonjour Caroline, je viens de votre site web et je souhaite avoir plus d'informations sur vos ${product.title.toLowerCase()}. Pouvez-vous me donner plus de détails ?`;
+                      const whatsappUrl = `https://wa.me/22586322800?text=${encodeURIComponent(message)}`;
+                      window.open(whatsappUrl, '_blank');
+                    }}
+                  >
                     En Savoir Plus
                   </Button>
                 </div>
@@ -276,13 +300,26 @@ const Index = () => {
             Nous donnons vie à vos idées avec notre savoir-faire artisanal.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="xl">
+            <Button 
+              variant="secondary" 
+              size="xl"
+              onClick={() => {
+                const message = "Bonjour Caroline, je viens de votre site web et je souhaite discuter d'un projet personnalisé. Pouvez-vous m'aider ?";
+                const whatsappUrl = `https://wa.me/22586322800?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
+            >
               Nous Contacter
             </Button>
             <Button 
               variant="outline" 
               size="xl"
               className="bg-white/20 text-primary-foreground hover:bg-white/30 border-white/30"
+              onClick={() => {
+                const message = "Bonjour Caroline, je viens de votre site web et je souhaite voir votre collection complète de créations au crochet.";
+                const whatsappUrl = `https://wa.me/22586322800?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+              }}
             >
               Voir Nos Créations
             </Button>
