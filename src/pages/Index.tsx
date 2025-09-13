@@ -39,7 +39,7 @@ const Index = () => {
             <div className="space-y-8">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight">
                 Créations{' '}
-                <span className="bg-gradient-hero bg-clip-text text-transparent">
+                <span className="text-gradient-hero">
                   Artisanales
                 </span>
                 <br />
@@ -126,7 +126,7 @@ const Index = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Nos Créations{' '}
-              <span className="bg-gradient-hero bg-clip-text text-transparent">
+              <span className="text-gradient-hero">
                 Phares
               </span>
             </h2>

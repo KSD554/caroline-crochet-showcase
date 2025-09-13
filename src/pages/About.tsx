@@ -10,7 +10,7 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             À Propos de{' '}
-            <span className="bg-gradient-hero bg-clip-text text-transparent">
+            <span className="text-gradient-hero">
               Caroline Shop
             </span>
           </h1>

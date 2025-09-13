@@ -13,7 +13,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-gradient-hero rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-sm">C</span>
               </div>
-              <span className="text-xl font-bold bg-gradient-hero bg-clip-text text-transparent">
+              <span className="text-xl font-bold text-gradient-hero">
                 Caroline Shop
               </span>
             </Link>

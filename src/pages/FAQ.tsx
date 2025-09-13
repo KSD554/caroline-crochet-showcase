@@ -60,7 +60,7 @@ const FAQ = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Questions{' '}
-            <span className="bg-gradient-hero bg-clip-text text-transparent">
+            <span className="text-gradient-hero">
               Fréquentes
             </span>
           </h1>

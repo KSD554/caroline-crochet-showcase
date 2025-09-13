@@ -36,10 +36,10 @@ All colors MUST be HSL.
     --accent-foreground: 0 0% 100%;
     --accent-soft: 200 35% 90%;
 
-    /* Craft-inspired gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(345 70% 55%), hsl(345 60% 65%));
-    --gradient-soft: linear-gradient(180deg, hsl(35 20% 97%), hsl(35 15% 94%));
-    --gradient-accent: linear-gradient(135deg, hsl(200 70% 65%), hsl(180 60% 70%));
+    /* Craft-inspired gradients - Fixed for proper visibility */
+    --gradient-hero: linear-gradient(135deg, #e11d48, #f43f5e);
+    --gradient-soft: linear-gradient(180deg, #faf7f3, #f5f1eb);
+    --gradient-accent: linear-gradient(135deg, #0ea5e9, #06b6d4);
 
     /* Artisan shadows */
     --shadow-soft: 0 4px 20px -8px hsl(345 70% 55% / 0.15);
@@ -167,17 +167,25 @@ All colors MUST be HSL.
     50% { transform: translateY(-5px); }
   }
 
-  /* Gradients utilities */
+  /* Gradients utilities - Fixed for text gradients */
   .bg-gradient-hero {
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, #e11d48, #f43f5e);
   }
 
   .bg-gradient-soft {
-    background: var(--gradient-soft);
+    background: linear-gradient(180deg, #faf7f3, #f5f1eb);
   }
 
   .bg-gradient-accent {
-    background: var(--gradient-accent);
+    background: linear-gradient(135deg, #0ea5e9, #06b6d4);
+  }
+
+  /* Text gradient utilities for better visibility */
+  .text-gradient-hero {
+    background: linear-gradient(135deg, #e11d48, #f43f5e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
 
   /* Shadow utilities */
